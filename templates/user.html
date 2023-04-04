@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Details</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Details</h1>
+  <table>
+    <tr>
+      <th>Login</th>
+      <td>{{ user['login'] }}</td>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <td>{{ user['id'] }}</td>
+    </tr>
+    <tr>
+      <th>Avatar URL</th>
+      <td><img src="{{ user['avatar_url'] }}" alt="Avatar"></td>
+    </tr>
+    <tr>
+      <th>URL</th>
+      <td><a href="{{ user['html_url'] }}">{{ user['html_url'] }}</a></td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>{{ user['name'] }}</td>
+    </tr>
+    <tr>
+      <th>Company</th>
+      <td>{{ user['company'] }}</td>
+    </tr>
+    <tr>
+      <th>Location</th>
+      <td>{{ user['location'] }}</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>{{ user['email'] }}</td>
+    </tr>
+    <tr>
+      <th>Bio</th>
+      <td>{{ user['bio'] }}</td>
+    </tr>
+    <tr>
+      <th>Twitter Username</th>
+      <td>{{ user['twitter_username'] }}</td>
+    </tr>
+    <tr>
+      <th>Public Repositories</th>
+      <td>{{ user['public_repos'] }}</td>
+    </tr>
+    <tr>
+      <th>Public Gists</th>
+      <td>{{ user['public_gists'] }}</td>
+    </tr>
+    <tr>
+      <th>Followers</th>
+      <td>{{ user['followers'] }}</td>
+    </tr>
+    <tr>
+      <th>Following</th>
+      <td>{{ user['following'] }}</td>
+    </tr>
+    <tr>
+      <th>Created At</th>
+      <td>{{ user['created_at'] }}</td>
+    </tr>
+    <tr>
+      <th>Updated At</th>
+      <td>{{ user['updated_at'] }}</td>
+    </tr>
+  </table>
+</body>
+</html>

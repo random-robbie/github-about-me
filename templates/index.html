@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub User Info</title>
+</head>
+<body>
+    <h1>GitHub User Info</h1>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+    <form method="post">
+        <label for="token">GitHub Personal Token:</label>
+        <input type="text" id="token" name="token" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
